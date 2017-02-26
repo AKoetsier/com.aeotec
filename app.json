@@ -405,6 +405,93 @@
       ]
     },
     {
+      "id": "ZW112",
+      "name": {
+        "en": "Door/Window Sensor 6"
+      },
+      "zwave": {
+        "manufacturerId": 134,
+        "productTypeId": 2,
+        "productId": 112,
+        "learnmode": {
+          "image": "/drivers/ZW112/assets/learnmode.svg",
+          "instruction": {
+            "en": "Press the Z-Wave button on your Door/Window Sensor 6",
+            "nl": "Druk op de Z-Wave knop op de Deur/Raam Sensor 6"
+          },
+          "wakeUpInterval": 300
+        },
+        "associationGroups": [
+          1
+        ],
+        "defaultConfiguration": [
+          {
+            "id": 101,
+            "size": 1,
+            "value": 1
+          },
+          {
+            "id": 121,
+            "size": 1,
+            "value": 2
+          }
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact",
+        "measure_battery"
+      ],
+      "images": {
+        "large": "/drivers/ZW112/assets/images/large.png",
+        "small": "/drivers/ZW112/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": 1,
+          "type": "dropdown",
+          "value": "0",
+          "label": {
+            "en": "Sensor Behaviour",
+            "nl": "Sensor Gedrag"
+          },
+          "hint": {
+            "en": "When must the sensor turn on the contact alarm, when the door/window is open or closed",
+            "nl": "Wanneer zal de sensor het contact alarm aanzetten, bij het open of dicht zijn van de deur of het raam"
+          },
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                "en": "No contact = on, contact = off",
+                "nl": "Geen contact = aan, contact = uit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                "en": "No contact = off, contact = on",
+                "nl": "Geen contact = uit, contact = aan"
+              }
+            }
+          ]
+        },
+        {
+          "id": 101,
+          "type": "checkbox",
+          "label": {
+            "en": "Low battery warning",
+            "nl": "Lege batterij waarschuwing"
+          },
+          "value": true,
+          "hint": {
+            "en": "Send low battery Report",
+            "nl": "Stuur lege batterij waarschuwing"
+          }
+        }
+      ]
+    },
+    {
       "id": "DSD37",
       "name": {
         "en": "Repeater"
